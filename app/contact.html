@@ -57,62 +57,30 @@
             <!-- /.container-fluid -->
         </nav>
 
-        <!--http://www.bootply.com/59900-->
-        <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-                <li data-target="#carousel" data-slide-to="3"></li>
-                <li data-target="#carousel" data-slide-to="4"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <!--Como la imagen la pongo desde el css no puedo dar valor al atributo "alt", así que por lo menos le pongo title... será algo menos accesible...-->
-                <div id="img0" class="item active" title="Restaurante y cascada, muy cerca">
-                    <!--<img alt="..." class="img-responsive" style="display:none">-->
-                    <div class="carousel-caption">
-                        <h3>Ven a nuestro restaurante, al lado de la cascada</h3>
-                    </div>
-                </div>
-                <div id="img1" class="item" title="Barranco de la peonera">
-                    <!--<img src="/images/peonera.jpg" alt="..." class="img-responsive">-->
-                    <div class="carousel-caption">
-                        <h3>Peonera</h3> Barranco que finaliza en <i>El Salto</i>
-                    </div>
-                </div>
-                <div id="img2" class="item" title="El Salto desde enfrente">
-                    <!--<img src="/images/salto.jpg" alt="..." class="img-responsive">-->
-                    <div class="carousel-caption">
-                        <h3><i>El Salto</i></h3>
-                    </div>
-                </div>
-                <div id="img3" class="item" title="El salto de perfil">
-                    <!--<img src="/images/salto1.jpg" alt="...">-->
-                    <div class="carousel-caption">
-                        <h3><i>El Salto</i> de lado</h3>
-                    </div>
-                </div>
-                <div id="img4" class="item" title="El salto desde arriba">
-                    <!--<img src="/images/salto2.jpg" alt="..." class="img-responsive">-->
-                    <div class="carousel-caption">
-                        <h3><i>El Salto</i> desde arriba</h3>
-                    </div>
-                </div>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
             </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Example block-level help text here.</p>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Check me out
+                </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
 
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-                <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
-            </a>
-            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-                <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
-            </a>
-        </div>
-        <!-- Carousel -->
-
+        <a href="#" class="btn btn-primary btn-lg">Home</a>
+        <a href="#about" class="btn btn-success btn-lg">About</a>
 
         <div class="text-center">
             Albergue-Restaurante <i>El Salto</i>
