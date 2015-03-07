@@ -12,17 +12,12 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
 .carousel-inner > .item img {
   width: 100%;
 }
-.wraper {
-  position: absolute;
-}
 #map-canvas {
   width: 100%;
   height: 500px;
   left: 0px;
   right: 0px;
-  bottom: 0px;
   top: 0px;
-  position: absolute;
 }
 /* Mobile */
 @media (max-width: 767px) {
