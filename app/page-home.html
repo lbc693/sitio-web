@@ -1,5 +1,51 @@
-<h1>Angular Animations Shenanigans</h1>
-<h2>Home</h2>
+<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
 
-<a href="#about" class="btn btn-success btn-lg">About</a>
-<a href="#contact" class="btn btn-danger btn-lg">Contact</a>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="/images/salto_restaurante.jpg" alt="..." class="img-responsive">
+            <div class="carousel-caption">
+                <h3>Caption Text</h3>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/images/peonera.jpg" alt="..." class="img-responsive">
+            <div class="carousel-caption">
+                <h3>Caption Text</h3>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/images/salto.jpg" alt="..." class="img-responsive">
+            <div class="carousel-caption">
+                <h3>Caption Text</h3>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/images/salto1.jpg" alt="..." class="img-responsive">
+            <div class="carousel-caption">
+                <h3>Caption Text</h3>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/images/salto2.jpg" alt="..." class="img-responsive">
+            <div class="carousel-caption">
+                <h3>Caption Text</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+<!-- Carousel -->

@@ -8,6 +8,10 @@ animateApp.config(function($routeProvider) {
             templateUrl: 'page-home.html',
             controller: 'mainController'
         })
+        .when('/carousel', {
+            templateUrl: 'page-home.html#carousel',
+            controller: 'mainController'
+        })
         .when('/about', {
             templateUrl: 'page-about.html',
             controller: 'aboutController'
@@ -31,9 +35,8 @@ animateApp.controller('contactController', function($scope) {
     $scope.pageClass = 'page-contact';
 });
 
-function HeaderController($scope, $location) 
-{ 
-    $scope.isActive = function (viewLocation) { 
+function HeaderController($scope, $location) {
+    $scope.isActive = function(viewLocation) {
         return viewLocation === $location.path();
     };
 }

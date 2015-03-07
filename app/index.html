@@ -24,10 +24,9 @@
     <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
-    <script src="app.js"></script>
 </head>
 
-<body ng-app="animateApp">
+<body data-ng-app="animateApp">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -48,11 +47,11 @@
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"  ng-controller="HeaderController">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-ng-controller="HeaderController">
                     <ul class="nav navbar-nav">
-                        <li ng-class="{ active: isActive('/about')}"><a href="#about">Sobre nosotros</a>
+                        <li data-ng-class="{ active: isActive('/about')}"><a href="#about">Sobre nosotros</a>
                         </li>
-                        <li ng-class="{ active: isActive('/contact')}"><a href="#contact">Contacta</a>
+                        <li data-ng-class="{ active: isActive('/contact')}"><a href="#contact">Contacta</a>
                         </li>
                     </ul>
                 </div>
@@ -60,14 +59,16 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
+
         <!-- inject our views using ng-view -->
         <!-- each angular controller applies a different class here -->
-        <div class="page {{ pageClass }}" ng-view></div>
+        <div class="page {{ pageClass }}" data-ng-view></div>
 
-        <div id="about">
-            <p>A demo on Angular Animations: ng-view</p>
-            <p>View the <a href="http://scotch.io/tutorials/javascript/animating-angularjs-apps-ngview">Scotch.io Tutorial</a>
-            </p>
+        <div class="text-center">
+            Albergue-Restaurante <i>El Salto</i>
+            <br/> 974343537
+            <br/> Afueras, 22144 Bierge
+            <br/> Huesca
         </div>
     </div>
 
