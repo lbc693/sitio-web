@@ -1,15 +1,106 @@
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+/*CSS*/
+
+.carousel-inner > .item {
+    background-repeat: no-repeat;
+    background-size: contain;
+    // (img-height / img-width * width) 
+    padding-top: 75%;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+/* Mobile */
+
+@media (max-width: 767px) {
+    @base-url: "/images/767-";
+    #img0 {
+        background-image: url("@{base-url}salto_restaurante.jpg");
+    }
+    #img1 {
+        background-image: url("@{base-url}peonera.jpg");
+    }
+    #img2 {
+        background-image: url("@{base-url}salto.jpg");
+    }
+    #img3 {
+        background-image: url("@{base-url}salto1.jpg");
+    }
+    #img4 {
+        background-image: url("@{base-url}salto2.jpg");
+    }
+}
+/* tablets */
+
+@media (max-width: 991px) and (min-width: 768px) {
+    @base-url: "/images/991-";
+    #img0 {
+        background-image: url("@{base-url}salto_restaurante.jpg");
+    }
+    #img1 {
+        background-image: url("@{base-url}peonera.jpg");
+    }
+    #img2 {
+        background-image: url("@{base-url}salto.jpg");
+    }
+    #img3 {
+        background-image: url("@{base-url}salto1.jpg");
+    }
+    #img4 {
+        background-image: url("@{base-url}salto2.jpg");
+    }
+}
+/* laptops */
+
+@media (max-width: 1023px) and (min-width: 992px) {
+    @base-url: "/images/1023-";
+    #img0 {
+        background-image: url("@{base-url}salto_restaurante.jpg");
+    }
+    #img1 {
+        background-image: url("@{base-url}peonera.jpg");
+    }
+    #img2 {
+        background-image: url("@{base-url}salto.jpg");
+    }
+    #img3 {
+        background-image: url("@{base-url}salto1.jpg");
+    }
+    #img4 {
+        background-image: url("@{base-url}salto2.jpg");
+    }
+}
+/* desktops */
+
+@media (min-width: 1024px) {
+    @base-url: "/images/";
+    #img0 {
+        background-image: url("@{base-url}salto_restaurante.jpg");
+    }
+    #img1 {
+        background-image: url("@{base-url}peonera.jpg");
+    }
+    #img2 {
+        background-image: url("@{base-url}salto.jpg");
+    }
+    #img3 {
+        background-image: url("@{base-url}salto1.jpg");
+    }
+    #img4 {
+        background-image: url("@{base-url}salto2.jpg");
+    }
+}
+/**/
 
 // Core variables and mixins
 @import "bower_components/bootstrap/less/variables.less";
 @import "variables.less";
 @import "bower_components/bootstrap/less/mixins.less";
-
 // Reset and dependencies
 @import "bower_components/bootstrap/less/normalize.less";
 @import "bower_components/bootstrap/less/print.less";
 @import "bower_components/bootstrap/less/glyphicons.less";
-
 // Core CSS
 @import "bower_components/bootstrap/less/scaffolding.less";
 @import "bower_components/bootstrap/less/type.less";
@@ -18,7 +109,6 @@
 @import "bower_components/bootstrap/less/tables.less";
 @import "bower_components/bootstrap/less/forms.less";
 @import "bower_components/bootstrap/less/buttons.less";
-
 // Components
 @import "bower_components/bootstrap/less/component-animations.less";
 @import "bower_components/bootstrap/less/dropdowns.less";
@@ -41,13 +131,11 @@
 @import "bower_components/bootstrap/less/responsive-embed.less";
 @import "bower_components/bootstrap/less/wells.less";
 @import "bower_components/bootstrap/less/close.less";
-
 // Components w/ JavaScript
 @import "bower_components/bootstrap/less/modals.less";
 @import "bower_components/bootstrap/less/tooltip.less";
 @import "bower_components/bootstrap/less/popovers.less";
 @import "bower_components/bootstrap/less/carousel.less";
-
 // Utility classes
 @import "bower_components/bootstrap/less/utilities.less";
 @import "bower_components/bootstrap/less/responsive-utilities.less";

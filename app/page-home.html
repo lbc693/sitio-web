@@ -1,51 +1,56 @@
+<!--http://www.bootply.com/59900-->
 <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
         <li data-target="#carousel" data-slide-to="1"></li>
         <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+        <li data-target="#carousel" data-slide-to="4"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-        <div class="item active">
-            <img src="/images/salto_restaurante.jpg" alt="..." class="img-responsive">
+        <!--Como la imagen la pongo desde el css no puedo dar valor al atributo "alt", así que por lo menos le pongo title... será algo menos accesible...-->
+        <div id="img0" class="item active" title="Restaurante y cascada, muy cerca">
+            <!--<img alt="..." class="img-responsive" style="display:none">-->
             <div class="carousel-caption">
-                <h3>Caption Text</h3>
+                <h3>Ven a nuestro restaurante, al lado de la cascada</h3>
             </div>
         </div>
-        <div class="item">
-            <img src="/images/peonera.jpg" alt="..." class="img-responsive">
+        <div id="img1" class="item" title="Barranco de la peonera">
+            <!--<img src="/images/peonera.jpg" alt="..." class="img-responsive">-->
             <div class="carousel-caption">
-                <h3>Caption Text</h3>
+                <h3>Peonera</h3>
+                Barranco que finaliza en <i>El Salto</i>
             </div>
         </div>
-        <div class="item">
-            <img src="/images/salto.jpg" alt="..." class="img-responsive">
+        <div id="img2" class="item" title="El Salto desde enfrente">
+            <!--<img src="/images/salto.jpg" alt="..." class="img-responsive">-->
             <div class="carousel-caption">
-                <h3>Caption Text</h3>
+                <h3><i>El Salto</i></h3>
             </div>
         </div>
-        <div class="item">
-            <img src="/images/salto1.jpg" alt="..." class="img-responsive">
+        <div id="img3" class="item" title="El salto de perfil">
+            <!--<img src="/images/salto1.jpg" alt="...">-->
             <div class="carousel-caption">
-                <h3>Caption Text</h3>
+                <h3><i>El Salto</i> de lado</h3>
             </div>
         </div>
-        <div class="item">
-            <img src="/images/salto2.jpg" alt="..." class="img-responsive">
+        <div id="img4" class="item" title="El salto desde arriba">
+            <!--<img src="/images/salto2.jpg" alt="..." class="img-responsive">-->
             <div class="carousel-caption">
-                <h3>Caption Text</h3>
+                <h3><i>El Salto</i> desde arriba</h3>
             </div>
         </div>
     </div>
 
     <!-- Controls -->
     <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
+        <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
     </a>
     <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
+        <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
     </a>
 </div>
 <!-- Carousel -->

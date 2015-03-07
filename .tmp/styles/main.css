@@ -1,4 +1,87 @@
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+/*CSS*/
+.carousel-inner > .item {
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 75%;
+  width: 100%;
+}
+.carousel-inner > .item img {
+  width: 100%;
+}
+/* Mobile */
+@media (max-width: 767px) {
+  #img0 {
+    background-image: url("/images/767-salto_restaurante.jpg");
+  }
+  #img1 {
+    background-image: url("/images/767-peonera.jpg");
+  }
+  #img2 {
+    background-image: url("/images/767-salto.jpg");
+  }
+  #img3 {
+    background-image: url("/images/767-salto1.jpg");
+  }
+  #img4 {
+    background-image: url("/images/767-salto2.jpg");
+  }
+}
+/* tablets */
+@media (max-width: 991px) and (min-width: 768px) {
+  #img0 {
+    background-image: url("/images/991-salto_restaurante.jpg");
+  }
+  #img1 {
+    background-image: url("/images/991-peonera.jpg");
+  }
+  #img2 {
+    background-image: url("/images/991-salto.jpg");
+  }
+  #img3 {
+    background-image: url("/images/991-salto1.jpg");
+  }
+  #img4 {
+    background-image: url("/images/991-salto2.jpg");
+  }
+}
+/* laptops */
+@media (max-width: 1023px) and (min-width: 992px) {
+  #img0 {
+    background-image: url("/images/1023-salto_restaurante.jpg");
+  }
+  #img1 {
+    background-image: url("/images/1023-peonera.jpg");
+  }
+  #img2 {
+    background-image: url("/images/1023-salto.jpg");
+  }
+  #img3 {
+    background-image: url("/images/1023-salto1.jpg");
+  }
+  #img4 {
+    background-image: url("/images/1023-salto2.jpg");
+  }
+}
+/* desktops */
+@media (min-width: 1024px) {
+  #img0 {
+    background-image: url("/images/salto_restaurante.jpg");
+  }
+  #img1 {
+    background-image: url("/images/peonera.jpg");
+  }
+  #img2 {
+    background-image: url("/images/salto.jpg");
+  }
+  #img3 {
+    background-image: url("/images/salto1.jpg");
+  }
+  #img4 {
+    background-image: url("/images/salto2.jpg");
+  }
+}
+/**/
 /* LESS - http://lesscss.org style sheet */
 /* Palette color codes */
 /* Palette URL: http://paletton.com/#uid=11a0u0kllllaFw0g0qFqFg0w0aF */
