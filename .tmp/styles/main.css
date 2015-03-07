@@ -19,6 +19,23 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
   right: 0px;
   top: 0px;
 }
+.sprite {
+  background: url('/images/sprite.png') no-repeat top left;
+  width: 204px;
+  height: 204px;
+}
+.sprite.fb {
+  background-position: 0 0;
+}
+.sprite.twitter {
+  background-position: -214px 0;
+}
+.sprite.skype {
+  background-position: -428px 0;
+}
+.sprite.gplus {
+  background-position: -642px 0;
+}
 /* Mobile */
 @media (max-width: 767px) {
   #img0 {
