@@ -19,6 +19,7 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
   right: 0px;
   top: 0px;
 }
+/*Utilizando http://instantsprite.com/*/
 .sprite {
   background: url('/images/sprite.png') no-repeat top left;
   width: 204px;
@@ -35,6 +36,15 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
 }
 .sprite.gplus {
   background-position: -642px 0;
+}
+.spacer50 {
+  height: 50px;
+  width: 100%;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: block;
 }
 /* Mobile */
 @media (max-width: 767px) {

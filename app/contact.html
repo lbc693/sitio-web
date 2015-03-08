@@ -59,26 +59,54 @@
 
         <div class="row">
 
-            <form>
+            <form class="form-horizontal" method="post" action="#" id="validForm">
+                <!-- Text input-->
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputFile">File input</label>
-                    <input type="file" id="exampleInputFile">
-                    <p class="help-block">Example block-level help text here.</p>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"> Check me out
+                    <label class="col-md-4 control-label" for="name">Nombre
                     </label>
+                    <div class="col-md-4">
+                        <input id="name" name="name" placeholder="Nombre" class="form-control input-md" type="text">
+
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="surname">Apellidos
+                    </label>
+                    <div class="col-md-4">
+                        <input id="surname" name="surname" placeholder="Apellidos" class="form-control input-md" type="text">
+
+                    </div>
+                </div>
+
+                <!-- Text <input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="phone">Teléfono
+                    </label>
+                    <div class="col-md-4">
+                        <input id="phone" name="phone" placeholder="Teléfono" class="form-control input-md" type="text">
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="email">Correo electrónico
+                    </label>
+                    <div class="col-md-4">
+                        <input id="email" name="email" placeholder="Email" class="form-control input-md" type="text">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="email2">Mensaje
+                    </label>
+                    <div class="col-md-4">
+                        <textarea id="email2" name="email2" placeholder="Escriba aquí su comentario" class="form-control input-md" type="text" rows="3"></textarea>
+                    </div>
+                </div>
             </form>
         </div>
         <div class="row">
