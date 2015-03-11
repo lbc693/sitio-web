@@ -17,8 +17,6 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
 }
 #map-canvas {
     height: 500px;
-    margin-left: 2%;
-    margin-right: 2%;
 }
 .top-buffer {
     margin-top: 2%;
@@ -32,7 +30,7 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
     text-align: center;
 }
 .sprite {
-    background: url("/images/sprite.png") no-repeat top left;
+    background: url("./../images/sprite.png") no-repeat top left;
     width: 204px;
     height: 204px;
 }
@@ -51,7 +49,7 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
 /* Mobile */
 
 @media (max-width: 767px) {
-    @base-url: "/images/767-";
+    @base-url: "./../images/767-";
     #img0 {
         background-image: url("@{base-url}salto_restaurante.jpg");
     }
@@ -71,7 +69,7 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
 /* tablets */
 
 @media (max-width: 991px) and (min-width: 768px) {
-    @base-url: "/images/991-";
+    @base-url: "./../images/991-";
     #img0 {
         background-image: url("@{base-url}salto_restaurante.jpg");
     }
@@ -91,7 +89,7 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
 /* laptops */
 
 @media (max-width: 1023px) and (min-width: 992px) {
-    @base-url: "/images/1023-";
+    @base-url: "./../images/1023-";
     #img0 {
         background-image: url("@{base-url}salto_restaurante.jpg");
     }
@@ -111,7 +109,7 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
 /* desktops */
 
 @media (min-width: 1024px) {
-    @base-url: "/images/";
+    @base-url: "./../images/";
     #img0 {
         background-image: url("@{base-url}salto_restaurante.jpg");
     }

@@ -15,8 +15,6 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
 }
 #map-canvas {
   height: 500px;
-  margin-left: 2%;
-  margin-right: 2%;
 }
 .top-buffer {
   margin-top: 2%;
@@ -29,7 +27,7 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
   text-align: center;
 }
 .sprite {
-  background: url("/images/sprite.png") no-repeat top left;
+  background: url("../images/sprite.png") no-repeat top left;
   width: 204px;
   height: 204px;
 }
@@ -48,73 +46,73 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
 /* Mobile */
 @media (max-width: 767px) {
   #img0 {
-    background-image: url("/images/767-salto_restaurante.jpg");
+    background-image: url("../images/767-salto_restaurante.jpg");
   }
   #img1 {
-    background-image: url("/images/767-peonera.jpg");
+    background-image: url("../images/767-peonera.jpg");
   }
   #img2 {
-    background-image: url("/images/767-salto.jpg");
+    background-image: url("../images/767-salto.jpg");
   }
   #img3 {
-    background-image: url("/images/767-salto1.jpg");
+    background-image: url("../images/767-salto1.jpg");
   }
   #img4 {
-    background-image: url("/images/767-salto2.jpg");
+    background-image: url("../images/767-salto2.jpg");
   }
 }
 /* tablets */
 @media (max-width: 991px) and (min-width: 768px) {
   #img0 {
-    background-image: url("/images/991-salto_restaurante.jpg");
+    background-image: url("../images/991-salto_restaurante.jpg");
   }
   #img1 {
-    background-image: url("/images/991-peonera.jpg");
+    background-image: url("../images/991-peonera.jpg");
   }
   #img2 {
-    background-image: url("/images/991-salto.jpg");
+    background-image: url("../images/991-salto.jpg");
   }
   #img3 {
-    background-image: url("/images/991-salto1.jpg");
+    background-image: url("../images/991-salto1.jpg");
   }
   #img4 {
-    background-image: url("/images/991-salto2.jpg");
+    background-image: url("../images/991-salto2.jpg");
   }
 }
 /* laptops */
 @media (max-width: 1023px) and (min-width: 992px) {
   #img0 {
-    background-image: url("/images/1023-salto_restaurante.jpg");
+    background-image: url("../images/1023-salto_restaurante.jpg");
   }
   #img1 {
-    background-image: url("/images/1023-peonera.jpg");
+    background-image: url("../images/1023-peonera.jpg");
   }
   #img2 {
-    background-image: url("/images/1023-salto.jpg");
+    background-image: url("../images/1023-salto.jpg");
   }
   #img3 {
-    background-image: url("/images/1023-salto1.jpg");
+    background-image: url("../images/1023-salto1.jpg");
   }
   #img4 {
-    background-image: url("/images/1023-salto2.jpg");
+    background-image: url("../images/1023-salto2.jpg");
   }
 }
 /* desktops */
 @media (min-width: 1024px) {
   #img0 {
-    background-image: url("/images/salto_restaurante.jpg");
+    background-image: url("../images/salto_restaurante.jpg");
   }
   #img1 {
-    background-image: url("/images/peonera.jpg");
+    background-image: url("../images/peonera.jpg");
   }
   #img2 {
-    background-image: url("/images/salto.jpg");
+    background-image: url("../images/salto.jpg");
   }
   #img3 {
-    background-image: url("/images/salto1.jpg");
+    background-image: url("../images/salto1.jpg");
   }
   #img4 {
-    background-image: url("/images/salto2.jpg");
+    background-image: url("../images/salto2.jpg");
   }
 }
 @media (min-width: 991px) {
