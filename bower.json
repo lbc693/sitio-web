@@ -1,9 +1,8 @@
 {
-  "name": "bootstrap-less2",
+  "name": "sitio-web",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.1",
-    "modernizr": "~2.8.1",
-    "bootstrap": "~3.3.2"
+    "bootstrap": "~3.2.0",
+    "modernizr": "~2.8.2"
   }
 }

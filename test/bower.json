@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-less2",
+  "name": "sitio-web",
   "private": true,
   "dependencies": {
     "chai": "~1.8.0",
