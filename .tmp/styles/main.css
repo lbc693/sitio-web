@@ -5,6 +5,28 @@
 Imágenes comprimidas utilizando
 for file in *.jpg; do convert $file -resize 767 767-$file; done 
 */
+/*
+Mapa responsivo gracias a
+http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio
+*/
+#containerResponsiveCustom {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+#dummyResponsiveCustom {
+  padding-top: 30%;
+}
+#elementResponsiveCustom {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#map-canvas {
+  height: 100%;
+}
 .carousel-inner > .item {
   background-repeat: no-repeat;
   background-size: contain;
@@ -12,9 +34,6 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
 }
 .carousel-inner > .item img {
   width: 100%;
-}
-#map-canvas {
-  height: 500px;
 }
 .top-buffer {
   margin-top: 2%;
@@ -27,21 +46,21 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
   text-align: center;
 }
 .sprite {
-  background: url("../images/sprite.png") no-repeat top left;
-  width: 204px;
-  height: 204px;
+  background: url('/images/sprite.png') no-repeat top left;
+  width: 50px;
+  height: 50px;
 }
 .sprite.fb {
   background-position: 0 0;
 }
-.sprite.twitter {
-  background-position: -214px 0;
+.sprite.gplus {
+  background-position: -50px 0;
 }
 .sprite.skype {
-  background-position: -428px 0;
+  background-position: -100px 0;
 }
-.sprite.gplus {
-  background-position: -642px 0;
+.sprite.twitter {
+  background-position: -150px 0;
 }
 /* Mobile */
 @media (max-width: 767px) {
@@ -115,16 +134,6 @@ for file in *.jpg; do convert $file -resize 767 767-$file; done
     background-image: url("../images/salto2.jpg");
   }
 }
-@media (min-width: 991px) {
-  .containerCust {
-    width: 80%;
-  }
-  #map-canvas {
-    height: 500px;
-    margin: 0 auto;
-  }
-}
-/**/
 /* LESS - http://lesscss.org style sheet */
 /* Palette color codes */
 /* Palette URL: http://paletton.com/#uid=11a0u0kllllaFw0g0qFqFg0w0aF */
