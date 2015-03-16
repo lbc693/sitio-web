@@ -61,86 +61,20 @@
     </nav>
 
     <div class="container">
-
-        <form class="form-horizontal" method="post" action="#" id="validForm">
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="name">Nombre
-                </label>
-                <div class="col-md-4">
-                    <input id="name" name="name" placeholder="Nombre" class="form-control input-md" type="text">
-
+        <div class="col-md-5 container">
+            <div class="hidden-md hidden-lg">
+                <div class="top-buffer">
                 </div>
             </div>
-
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="surname">Apellidos
-                </label>
-                <div class="col-md-4">
-                    <input id="surname" name="surname" placeholder="Apellidos" class="form-control input-md" type="text">
-
-                </div>
+            <div class="embed-responsive embed-responsive-16by9">
+                <video controls loop class="embed-responsive-item">
+                    <source src="./images/video/salto.mp4" type="video/mp4"/>
+                    <source src="./images/video.webm" type="video/webm"/>
+                    <source src="./images/salto.ogv" type="video/ogg"/>
+                    Tu navegador no soporta la etiqueta de vídeo
+                </video>
             </div>
-
-            <!-- Text <input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="phone">Teléfono
-                </label>
-                <div class="col-md-4">
-                    <input id="phone" name="phone" placeholder="Teléfono" class="form-control input-md" type="text">
-                </div>
-            </div>
-
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="email">Correo electrónico
-                </label>
-                <div class="col-md-4">
-                    <input id="email" name="email" placeholder="Email" class="form-control input-md" type="text">
-
-                </div>
-            </div>
-
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="email2">Mensaje
-                </label>
-                <div class="col-md-4">
-                    <textarea id="email2" name="email2" placeholder="Escriba aquí su comentario" class="form-control input-md" rows="3"></textarea>
-                </div>
-            </div>
-            <!-- Button -->
-            <div class="form-group">
-                <div class="col-md-offset-6 col-md-4">
-                    <button type="submit" id="send" name="send" class="btn btn-default btn-custom">Enviar formulario</button>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div class="row">
-        <ul class="list-inline sprite-container">
-            <li>
-                <a href="https://www.facebook.com/">
-                    <div class='sprite fb'></div>
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/">
-                    <div class='sprite twitter'></div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.skype.com">
-                    <div class='sprite skype'></div>
-                </a>
-            </li>
-            <li>
-                <a href="https://plus.google.com/">
-                    <div class='sprite gplus'></div>
-                </a>
-            </li>
-        </ul>
+        </div>
     </div>
 
     <footer class="row top-buffer">
@@ -151,10 +85,6 @@
             <br/> Huesca
         </div>
     </footer>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false">
-    </script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -177,8 +107,7 @@
     <script src="../bower_components/bootstrap/js/tab.js"></script>
     <!-- endbuild -->
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
+    <!-- build:js scripts/entorno.js -->
     <!-- endbuild -->
 </body>
 

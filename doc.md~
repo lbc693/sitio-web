@@ -1,9 +1,12 @@
 - Fuentes google utilizadas
-	font-family: 'Hanna', serif;
+	- Indie Flower
+	- Roboto Condensed
 - Paleta de colores
 	http://paletton.com/#uid=11a0u0kllllaFw0g0qFqFg0w0aF 
 - Framework CSS...
 	bootstrap
 - Otros
-	Mapa
-	Carrusel de fotografías
+	- Sprite para redes sociales en apartado "Contacta"
+	- Mapa en div fluído
+	- Carrusel de fotografías
+	- Imágenes del carrusel con varias resoluciones, como background de los divs.

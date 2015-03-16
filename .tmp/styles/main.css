@@ -5,27 +5,21 @@
 Imágenes comprimidas utilizando
 for file in *.jpg; do convert $file -resize 767 767-$file; done 
 */
-/*
-Mapa responsivo gracias a
-http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio
-*/
-#containerResponsiveCustom {
-  display: inline-block;
-  position: relative;
-  width: 100%;
+.indie {
+  font-family: 'Indie Flower', cursive;
 }
-#dummyResponsiveCustom {
-  padding-top: 30%;
+.rob-cond {
+  font-family: 'Roboto Condensed', sans-serif;
 }
-#elementResponsiveCustom {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+footer {
+  background-color: #806415;
 }
 #map-canvas {
-  height: 100%;
+  padding-top: 40%;
+}
+.pull-down {
+  bottom: 0px;
+  position: absolute;
 }
 .carousel-inner > .item {
   background-repeat: no-repeat;
@@ -38,15 +32,12 @@ http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio
 .top-buffer {
   margin-top: 2%;
 }
-.koreano {
-  font-family: 'Hanna', serif;
-}
 /*Utilizando http://instantsprite.com/*/
 .sprite-container {
   text-align: center;
 }
 .sprite {
-  background: url('/images/sprite.png') no-repeat top left;
+  background: url('../images/sprite.png') no-repeat top left;
   width: 50px;
   height: 50px;
 }
@@ -62,8 +53,15 @@ http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio
 .sprite.twitter {
   background-position: -150px 0;
 }
+/*http://stackoverflow.com/questions/18424798/twitter-bootstrap-3-how-to-use-media-queries*/
 /* Mobile */
 @media (max-width: 767px) {
+  .text-responsive {
+    font-size: 1.2em;
+  }
+  .carousel-inner > .item > .carousel-caption {
+    display: none;
+  }
   #img0 {
     background-image: url("../images/767-salto_restaurante.jpg");
   }
@@ -81,7 +79,13 @@ http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio
   }
 }
 /* tablets */
-@media (max-width: 991px) and (min-width: 768px) {
+@media (min-width: 768px) {
+  .text-responsive {
+    font-size: 1.5em;
+  }
+  .carousel-inner > .item > .carousel-caption {
+    display: visible;
+  }
   #img0 {
     background-image: url("../images/991-salto_restaurante.jpg");
   }
@@ -99,7 +103,10 @@ http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio
   }
 }
 /* laptops */
-@media (max-width: 1023px) and (min-width: 992px) {
+@media (min-width: 992px) {
+  .text-responsive {
+    font-size: 1.75em;
+  }
   #img0 {
     background-image: url("../images/1023-salto_restaurante.jpg");
   }
@@ -117,7 +124,10 @@ http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio
   }
 }
 /* desktops */
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
+  .text-responsive {
+    font-size: 2em;
+  }
   #img0 {
     background-image: url("../images/salto_restaurante.jpg");
   }
